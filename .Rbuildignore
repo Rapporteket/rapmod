@@ -1,3 +1,4 @@
 ^rapmod\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
+^pre-commit.sh$
