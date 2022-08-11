@@ -2,3 +2,5 @@
 ^\.Rproj\.user$
 ^README\.Rmd$
 ^pre-commit.sh$
+^LICENSE\.md$
+^\.github$
