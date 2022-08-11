@@ -21,11 +21,13 @@ RoxygenNote: 7.1.2
 Suggests: 
     httptest,
     testthat (>= 3.0.0),
-    withr
-Config/testthat/edition: 3
-Imports: 
-    rapbase,
-    sship,
-    shiny,
+    withr,
     RMariaDB,
     DBI
+Config/testthat/edition: 3
+Imports: 
+    sship,
+    shiny,
+    rapbase
+Remotes:
+    Rapporteket/rapbase
