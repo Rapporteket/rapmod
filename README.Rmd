@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
-The goal of rapmod is to ...
+This package provides shiny application modules that may be used by registries at [Rapporteket](https://rapporteket.github.io/rapporteket/).
 
 ## Installation
 
