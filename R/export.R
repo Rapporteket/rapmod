@@ -299,12 +299,10 @@ get_github <- function(what, value, proxy_url = NULL, token = NULL) {
     vName <- "login"
   }
 
-  #nocov start
   if (what %in% c("members")) {
     endpoint <- paste0("/orgs/rapporteket/teams/", value, "/members")
     vName <- "login"
   }
-  #nocov end
 
   if (what %in% c("keys")) {
     endpoint <- paste0("/users/", value, "/keys")

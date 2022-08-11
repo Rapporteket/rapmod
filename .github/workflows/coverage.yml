@@ -31,6 +31,10 @@ jobs:
         run: |
           sudo /etc/init.d/mysql start
           mysql -e 'CREATE DATABASE IF NOT EXISTS testdb;' -uroot -proot
+          echo "GITHUB_ACTIONS_RUN_DB_UNIT_TESTS=true" >> $GITHUB_ENV
+          echo "DB_HOST=localhost" >> $GITHUB_ENV
+          echo "DB_USER=root" >> $GITHUB_ENV
+          echo "DB_PASS=root" >> $GITHUB_ENV
 
       - name: Query dependencies
         run: |

@@ -7,8 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "biorakel@gmail.com",
            comment = c(ORCID = "0000-0002-5210-3656"))
-Description: rapmod provides shiny application modules for registries at
-    Rapporteket
+Description: Provides shiny application modules for registries at Rapporteket
     <https://rapporteket.github.io/rapporteket/articles/short_introduction.html>.
     These modules represent common tools that are often required by registries
     using Rapporteket as a report service. The motivation and purpose of this
