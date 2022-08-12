@@ -68,7 +68,6 @@
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of rapmod like so:</p>
 <p>Install <em>rapmod</em> from CRAN:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"rapmod"</span><span class="op">)</span></span></code></pre></div>
@@ -86,7 +85,9 @@
 <p>This is a basic example which shows you how to solve a common problem:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">rapmod</span><span class="op">)</span></span>
-<span><span class="co">## basic example code</span></span></code></pre></div>
+<span><span class="fu"><a href="reference/export.html">export_app</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.</span></span></code></pre></div>
+<div class="muted well" style="width: 100% ; height: 400px ; text-align: center; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;">Shiny applications not supported in static R Markdown documents</div>
 <p>What is special about using <code>README.Rmd</code> instead of just <code>README.md</code>? You can include R chunks like so:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">cars</span><span class="op">)</span></span>
@@ -151,7 +152,7 @@
 <ul class="list-unstyled">
 <li><a href="https://github.com/rapporteket/rapmod/releases" class="external-link"><img src="https://img.shields.io/github/v/release/rapporteket/rapmod?sort=semver" alt="Version"></a></li>
 <li><a href="https://github.com/Rapporteket/rapmod/actions" class="external-link"><img src="https://github.com/Rapporteket/rapmod/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
-<li><a href="https://codecov.io/github/Rapporteket/rapmod?branch=master" class="external-link"><img src="https://codecov.io/github/Rapporteket/rapmod/rapmod.svg?branch=master" alt="codecov.io"></a></li>
+<li><a href="https://codecov.io/github/Rapporteket/rapmod?branch=main" class="external-link"><img src="https://codecov.io/github/Rapporteket/rapmod/rapmod.svg?branch=main" alt="codecov.io"></a></li>
 <li><a href="https://CRAN.R-project.org/package=rapmod" class="external-link"><img src="https://www.r-pkg.org/badges/version/rapmod" alt="CRAN status"></a></li>
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
 <li><a href="https://rapporteket.github.io/rapmod/" class="external-link"><img src="https://img.shields.io/badge/Doc--grey.svg" alt="Doc"></a></li>
