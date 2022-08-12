@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Version](https://img.shields.io/github/v/release/rapporteket/rapmod?sort=semver)](https://github.com/rapporteket/rapmod/releases)
 [![R build status](https://github.com/Rapporteket/rapmod/workflows/R-CMD-check/badge.svg)](https://github.com/Rapporteket/rapmod/actions)
-[![codecov.io](https://codecov.io/github/Rapporteket/rapmod/rapmod.svg?branch=master)](https://codecov.io/github/Rapporteket/rapmod?branch=master)
+[![codecov.io](https://codecov.io/github/Rapporteket/rapmod/rapmod.svg?branch=main)](https://codecov.io/github/Rapporteket/rapmod?branch=main)
 [![CRAN status](https://www.r-pkg.org/badges/version/rapmod)](https://CRAN.R-project.org/package=rapmod)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Doc](https://img.shields.io/badge/Doc--grey.svg)](https://rapporteket.github.io/rapmod/)
@@ -27,8 +27,6 @@ knitr::opts_chunk$set(
 This package provides shiny application modules that may be used by registries at [Rapporteket](https://rapporteket.github.io/rapporteket/).
 
 ## Installation
-
-You can install the development version of rapmod like so:
 
 Install *rapmod* from CRAN:
 ```r
@@ -52,7 +50,7 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(rapmod)
-## basic example code
+export_app()
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:

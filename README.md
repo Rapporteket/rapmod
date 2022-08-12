@@ -8,7 +8,7 @@
 [![Version](https://img.shields.io/github/v/release/rapporteket/rapmod?sort=semver)](https://github.com/rapporteket/rapmod/releases)
 [![R build
 status](https://github.com/Rapporteket/rapmod/workflows/R-CMD-check/badge.svg)](https://github.com/Rapporteket/rapmod/actions)
-[![codecov.io](https://codecov.io/github/Rapporteket/rapmod/rapmod.svg?branch=master)](https://codecov.io/github/Rapporteket/rapmod?branch=master)
+[![codecov.io](https://codecov.io/github/Rapporteket/rapmod/rapmod.svg?branch=main)](https://codecov.io/github/Rapporteket/rapmod?branch=main)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/rapmod)](https://CRAN.R-project.org/package=rapmod)
 [![Lifecycle:
@@ -20,8 +20,6 @@ This package provides shiny application modules that may be used by
 registries at [Rapporteket](https://rapporteket.github.io/rapporteket/).
 
 ## Installation
-
-You can install the development version of rapmod like so:
 
 Install *rapmod* from CRAN:
 
@@ -50,8 +48,11 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(rapmod)
-## basic example code
+export_app()
+#> PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
 ```
+
+<div style="width: 100% ; height: 400px ; text-align: center; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;" class="muted well">Shiny applications not supported in static R Markdown documents</div>
 
 What is special about using `README.Rmd` instead of just `README.md`?
 You can include R chunks like so:
