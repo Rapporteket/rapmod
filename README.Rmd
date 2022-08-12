@@ -82,5 +82,5 @@ ln -s ./pre-commit.sh .git/hooks/pre-commit
 
 ## Ethics
 Please note that the 'rapmod' project is released with a
-[Contributor Code of Conduct](http://rapporteket.github.io/rapbase/CODE_OF_CONDUCT.html).
+[Contributor Code of Conduct](http://rapporteket.github.io/rapmod/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.
