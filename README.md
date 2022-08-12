@@ -5,10 +5,15 @@
 
 <!-- badges: start -->
 
+[![Version](https://img.shields.io/github/v/release/rapporteket/rapmod?sort=semver)](https://github.com/rapporteket/rapmod/releases)
+[![R build
+status](https://github.com/Rapporteket/rapmod/workflows/R-CMD-check/badge.svg)](https://github.com/Rapporteket/rapmod/actions)
+[![codecov.io](https://codecov.io/github/Rapporteket/rapmod/rapmod.svg?branch=master)](https://codecov.io/github/Rapporteket/rapmod?branch=master)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/rapmod)](https://CRAN.R-project.org/package=rapmod)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Doc](https://img.shields.io/badge/Doc--grey.svg)](https://rapporteket.github.io/rapmod/)
 <!-- badges: end -->
 
 This package provides shiny application modules that may be used by
@@ -18,9 +23,26 @@ registries at [Rapporteket](https://rapporteket.github.io/rapporteket/).
 
 You can install the development version of rapmod like so:
 
+Install *rapmod* from CRAN:
+
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+install.packages("rapmod")
 ```
+
+The latest release of the package can be installed from GitHub:
+
+``` r
+remotes::install_github("Rapporteket/rapmod@*release")
+```
+
+Or install the development version from GitHub with:
+
+``` r
+remotes::install("Rapporteket/rapmod")
+```
+
+Alternatively, the package source code can be [cloned from
+GitHub](https://github.com/Rapporteket/rapmod) and built locally.
 
 ## Example
 
@@ -57,3 +79,34 @@ You can also embed plots, for example:
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
+
+## Issues
+
+Please provide any comments (*e.g.* on proposed enhancements,
+shortcomings, errors) through the [issue
+tracker](https://github.com/Rapporteket/rapmod/issues).
+
+## Contributing
+
+If you want to make changes to this project please follow the
+[Contributing
+guide](https://rapporteket.github.io/rapmod/CONTRIBUTING.html). Proposed
+changes will be processed based on manual code reviews. Code that is
+accepted will be merged into the main branch and used for full scale
+TESTING and QA prior to making a release for PRODUCTION deployment.
+
+Please note that any changes to `README.Rmd` needs to be rendered
+(*e.g.* by `devtools::build_readme()`) to keep `README.md` up-to-date.
+To prevent commits of an outdated README-file `pre-commit.sh` in this
+project root can be added as a git-hook:
+
+``` bash
+ln -s ./pre-commit.sh .git/hooks/pre-commit
+```
+
+## Ethics
+
+Please note that the ‘rapmod’ project is released with a [Contributor
+Code of
+Conduct](http://rapporteket.github.io/rapbase/CODE_OF_CONDUCT.html). By
+contributing to this project, you agree to abide by its terms.
