@@ -8,7 +8,7 @@ name: test-coverage
 
 jobs:
   test-coverage:
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GH_TOKEN }}
       GITHUB_ACTIONS_RUN_DB_UNIT_TESTS: true
@@ -17,6 +17,11 @@ jobs:
       DB_PASS: "root"
     steps:
       - uses: actions/checkout@v3
+
+      - name: Install unmet sys deps
+        run: |
+          sudo apt update
+          sudo apt install -y --no-install-recommends libcurl4-openssl-dev libgit2-dev
 
       - uses: r-lib/actions/setup-r@v2
 
